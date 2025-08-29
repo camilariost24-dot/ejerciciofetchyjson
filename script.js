@@ -15,9 +15,8 @@ fetch(DATA_URL)
     return response.json();
   })
   .then(data => {
-    showData(data.students); // usamos el array de estudiantes
+    showData(data.students); // 👈 usamos el array de estudiantes
   })
   .catch(error => {
     console.error("Hubo un problema con el fetch:", error);
   });
-
